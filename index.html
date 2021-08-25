@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>To Do</title>
 </head>
 <body>
-    <h1>Stuff I need to do</h1>
+    <h1 class="title">Stuff I need to do</h1>
 
     <div class="all-tasks">
         <h2 class="task-list-title">My lists</h2>
         <ul class="task-list">
-            <li>youtube</li>
-            <li>work</li>
-            <li>grocery</li>
+            <li class="list-name active-list">youtube</li>
+            <li class="list-name">work</li>
+            <li class="list-name">grocery</li>
         </ul>
 
         <form action="">
             <label for="add-new-list"></label>
-            <input type="text" class="new-list" id="add-new-list" placeholder="New list name">
-            <button class="list-btn" aria-label="create-new-list">+</button>
+            <input type="text" class="new list" id="add-new-list" placeholder="New list name">
+            <button class="btn create" aria-label="create-new-list">+</button>
         </form>
     </div>
 
@@ -31,21 +32,21 @@
         </div>
 
         <div class="to-do-body">
-            <div class="tasks">
+            <div class="task">
                 <input type="checkbox" id="task-1">
                 <label for="task-1">
                     <span class="custom-checkbox"></span>
                     record todo list video</label>
             </div> <!-- Close task 1-->
 
-            <div class="tasks">
+            <div class="task">
                 <input type="checkbox" id="task-2">
                 <label for="task-2">
                     <span class="custom-checkbox"></span>
                     record todo list video</label>
             </div> <!-- Close task 1-->
 
-            <div class="tasks">
+            <div class="task">
                 <input type="checkbox" id="task-3">
                 <label for="task-3">
                     <span class="custom-checkbox"></span>
@@ -54,14 +55,14 @@
 
             <div class="new-task-creator">
                 <form action="">
-                    <label for="add-new-list"></label>
-                    <input type="text" class="new-list" id="add-new-task" placeholder="Create new task">
-                    <button class="task-btn" aria-label="create-new-task">+</button>
+                    <label for="add-new-task"></label>
+                    <input type="text" class="new task" id="add-new-task" placeholder="Create new task">
+                    <button class="btn create" aria-label="create-new-task">+</button>
                 </form>
             </div>
             <div class="to-do-actions">
-                <button class="btn-delete">Clear completed tasts</button>
-                <button class="btn-delete">Delete lists</button>
+                <button class="btn delete">Clear completed tasts</button>
+                <button class="btn delete">Delete lists</button>
             </div>
         </div>
     </div>
