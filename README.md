@@ -24,5 +24,5 @@ create custom checkboxes with HTML and CSS. I plan on using everything that I le
 
 ### Useful resources
 
-- [Example resource 1](https://www.youtube.com/watch?v=IhmSidOJSeE) - This is the HTML and CSS tutorial by Kevin Powel that I followed.
-- [Example resource 2](https://www.youtube.com/watch?v=W7FaYfuwu70) - This is JavaScript tutorial by Kyle Cook that I followed.
+- (https://www.youtube.com/watch?v=IhmSidOJSeE) - This is the HTML and CSS tutorial by Kevin Powel that I followed.
+- (https://www.youtube.com/watch?v=W7FaYfuwu70) - This is JavaScript tutorial by Kyle Cook that I followed.
