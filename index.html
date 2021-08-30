@@ -10,62 +10,51 @@
 <body>
     <h1 class="title">Stuff I need to do</h1>
 
-    <div class="all-tasks">
+    <div class="all-tasks" >
         <h2 class="task-list-title">My lists</h2>
-        <ul class="task-list">
-            <li class="list-name active-list">youtube</li>
+        <ul class="task-list" data-lists>
+            <!-- <li class="list-name active-list">youtube</li>
             <li class="list-name">work</li>
-            <li class="list-name">grocery</li>
+            <li class="list-name">grocery</li> -->
         </ul>
 
-        <form action="">
+        <form action="" data-new-list-form >
             <label for="add-new-list"></label>
-            <input type="text" class="new list" id="add-new-list" placeholder="New list name">
+            <input type="text" class="new list" data-new-list-input placeholder="New list name">
             <button class="btn create" aria-label="create-new-list">+</button>
         </form>
     </div>
 
-    <div class="todo-list">
+    <div class="todo-list" data-list-display-container>
         <div class="to-do-header">
-            <h2 class="list-title">Youtube</h2>
-            <p class="task-count">3 tasks remaining</p>
+            <h2 class="list-title" data-list-title></h2>
+            <p class="task-count" data-list-count>0 tasks remaining</p>
         </div>
 
-        <div class="to-do-body">
+        <div class="to-do-body" data-tasks >
             <div class="task">
-                <input type="checkbox" id="task-1">
-                <label for="task-1">
-                    <span class="custom-checkbox"></span>
-                    record todo list video</label>
-            </div> <!-- Close task 1-->
 
-            <div class="task">
-                <input type="checkbox" id="task-2">
-                <label for="task-2">
-                    <span class="custom-checkbox"></span>
-                    record todo list video</label>
-            </div> <!-- Close task 1-->
-
-            <div class="task">
-                <input type="checkbox" id="task-3">
-                <label for="task-3">
-                    <span class="custom-checkbox"></span>
-                    record todo list video</label>
-            </div> <!-- Close task 1-->
-
-            <div class="new-task-creator">
-                <form action="">
-                    <label for="add-new-task"></label>
-                    <input type="text" class="new task" id="add-new-task" placeholder="Create new task">
-                    <button class="btn create" aria-label="create-new-task">+</button>
-                </form>
             </div>
-            <div class="to-do-actions">
-                <button class="btn delete">Clear completed tasts</button>
-                <button class="btn delete">Delete lists</button>
-            </div>
+        </div>
+        <div class="new-task-creator">
+            <form action="" data-new-task-form>
+                <label for="add-new-task"></label>
+                <input type="text" class="new task" data-new-task-input placeholder="Create new task">
+                <button class="btn create" aria-label="create-new-task">+</button>
+            </form>
+        </div>
+        <div class="to-do-actions">
+            <button class="btn delete" data-clear-complete-tasks-btn>Clear completed tasts</button>
+            <button class="btn delete" data-delete-list-btn>Delete lists</button>
         </div>
     </div>
-    
+
+    <template id="task-template">
+        <div class="task">
+            <input type="checkbox">
+            <label> <span class="custom-checkbox"></span></label>
+        </div>
+    </template>
+<script src="js/main.js"></script>
 </body>
 </html>
